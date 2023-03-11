@@ -71,3 +71,9 @@ body{
     font-weight: 300;
     letter-spacing: 2px;
 }
+.container .box:hover .imgBox{
+    transform: translate(-3.5rem, -3.5rem);
+}
+.container .box:hover .content{
+    transform: translate(3.5rem, 3.5rem);
+}
