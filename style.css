@@ -14,3 +14,16 @@ body{
     display: flex;
     min-height: 100vh;
 }
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin: 4rem;
+}
