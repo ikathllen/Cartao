@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@100;200;300;500&family=Poppins:wght@500;600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: #ac93a6;
+    min-height: 100vh;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+.perfil::after, .perfil img {
+    border-radius: 50%;    
+}
+body, .perfil, .status {
+    display: flex;
+}
+.perfil{
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    background-color: rgba(248, 198, 237, 0.603);
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+}
+.perfil::before, .perfil::after{
+    content: '';
+    position: relative;
+    z-index: -1;
+}
+.perfil::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.perfil::after{
+    height: 10rem;
+    width: 70rem;
+}
+.perfil img{
+    width: 50rem;
+    min-width: 100px;
+}
+.informacoes{
+    margin-left: 1.5rem;
+}
+.nome{
+    margin-bottom: 1rem;
+}
+.nome h2{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+.nome h4{
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: #333;
+}
+.status h3{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+.status h4{
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+.texto{
+    margin-left: 1rem;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    margin-left: 1rem;
+    position: relative;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    letter-spacing: 0.1rem;
+    font-size: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    transition: 0.2s;
+}
+button:hover{
+    letter-spacing: 0.1rem;
+    padding: 0.8rem 1.2rem;
+    background: #e781d1;
+    color: #fff;
+    border: 1px solid #fff;
+    animation: box 3s infinite;
+}
